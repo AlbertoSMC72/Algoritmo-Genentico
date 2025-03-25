@@ -161,7 +161,7 @@ class PatioDesigner:
                         if all(math.hypot(x - cx, y - cy) >= 100 for cx, cy in self.colmenas_pos):
                             self.colmenas_pos.append((x, y))
                             self.canvas.create_oval(x - 100, y - 100, x + 100, y + 100,
-                                                    fill='lightgreen', outline='green',
+                                                    outline='green',
                                                     width=2, tags='zona_segura')
                             self.canvas.create_image(x, y, image=img_tk, tags='colmena')
                             break
